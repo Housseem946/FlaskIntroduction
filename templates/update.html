@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+<div>
+    <h1>TESSTTT</h1>
+    <title> Master Flask with me</title>
+
+</div>
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<html>
+    
+    <body>
+        <div class="content">
+            <h1 style="text-align : center ">Updated Master </h1>
+        
+            
+
+            <!--   c'est pour ajouter une zone de texte  --> 
+            <form action="/update/{{task.id}}" method="POST">
+                <input type="text" name="content" id="content" value="{{task.content}}">
+                <input type="submit" value="UPDATE BRO">
+            </form>
+            
+        
+        
+        
+        
+        </div>
+
+    </body>
+
+    
+    
+</html>
+
+{% endblock %}
+
