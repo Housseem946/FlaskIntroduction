@@ -5,9 +5,9 @@ from datetime import datetime
 app = Flask(__name__)
 
 # SQL ALCHEMY
-# 3 / for a relative path 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+
 #initialize db
 db =SQLAlchemy(app)
 
